@@ -1,0 +1,39 @@
+body{
+    width: 100%;
+    height: auto;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:auto;
+    margin-bottom: 20px;
+}
+.navbar h3{
+    margin-left: -10px;
+    color:rgb(88, 88, 196);
+    font-style: italic;
+}
+.navbar ul{
+    margin-left: 300px;
+}
+.navbar ul a {
+    float: right; 
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar ul a:hover{
+    text-decoration:underline;
+    color:palevioletred;
+} 
+
+.navbar ul li{
+   
+    display: inline;
+    padding-right: 80px;
+    padding-top: 6px;
+}
+ .container_0ne{
+    display: flex;
+    justify-content: space-evenly;
+}
