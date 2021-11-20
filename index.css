@@ -7,7 +7,7 @@ body{
     flex-direction: row;
     width: 100%;
     height:auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .navbar h3{
     margin-left: -10px;
@@ -20,7 +20,7 @@ body{
 .navbar ul a {
     float: right; 
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .navbar ul a:hover{
     text-decoration:underline;
@@ -36,4 +36,24 @@ body{
  .container_0ne{
     display: flex;
     justify-content: space-evenly;
+    background-color: rgb(22, 176, 236);
 }
+.container_0ne .Welcome_text{
+    padding: 40px;
+}
+.container_0ne  button{
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    color: rgb(12, 12, 148);
+    border-radius: 40px ;
+    border: none;
+    transform: 1.2;
+}
+.container_0ne  button a{
+    text-decoration: none;
+}
+.container_0ne  button a:hover{
+    color: tomato;
+}
+
