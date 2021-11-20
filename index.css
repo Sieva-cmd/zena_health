@@ -11,7 +11,7 @@ body{
 }
 .navbar h3{
     margin-left: -10px;
-    color:rgb(88, 88, 196);
+    color:#16B0EC;
     font-style: italic;
 }
 .navbar ul{
@@ -21,6 +21,7 @@ body{
     float: right; 
     text-decoration: none;
     margin-left: 60px;
+    color: black;
 }
 .navbar ul a:hover{
     text-decoration:underline;
@@ -52,6 +53,7 @@ body{
 }
 .container_0ne  button a{
     text-decoration: none;
+    color: black;
 }
 .container_0ne  button a:hover{
     color: tomato;
@@ -91,13 +93,56 @@ text-decoration: underline #16B0EC;
 .container_three #center_txt button{
     height: 40px;
     background-color: #16B0EC;
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
 
 }
 .container_three #center_txt button a{
     text-decoration: none;
+    color: black;
 }
 .container_three #center_txt button a:hover{
+    color: tomato;
+}
+.services{
+    background-color: #16B0EC;
+}
+.services .upper_col{
+    text-align: center;
+    color: white;
+}
+.services .Overflow{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+}
+.col_5{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.col_5 #col_5_1, #col_5_2, #col_5_3{
+    border-radius: 10px;
+    box-shadow: -10px 10px 10px lightgray;
+    text-align: center;
+
+}
+.Doctors{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #16B0EC;
+}
+footer  ul li a{
+    text-decoration: none;
+    color: black;
+} 
+footer  ul li a:hover{
     color: tomato;
 }
