@@ -56,4 +56,48 @@ body{
 .container_0ne  button a:hover{
     color: tomato;
 }
+.container_two{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.container_two span{
+text-decoration: underline #16B0EC;
+}
+.container_two button{
+    height: 50px;
+    width: 300px;
+    background-color: #16B0EC;
+    color: white;
+    border-radius: 40px ;
+    box-shadow: 10px 10px;
+    border: none;
+}
+.container_three{
+    display: flex;
+    justify-content: space-evenly;
 
+}
+.container_three img{
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px lightgray;
+}
+.container_three #center_txt{
+    width: 33.3%;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.container_three #center_txt button{
+    height: 40px;
+    background-color: #16B0EC;
+    border-radius: 10px;
+    border: none;
+
+}
+.container_three #center_txt button a{
+    text-decoration: none;
+}
+.container_three #center_txt button a:hover{
+    color: tomato;
+}
