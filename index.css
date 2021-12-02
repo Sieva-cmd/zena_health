@@ -1,7 +1,13 @@
+*{ 
+    overflow-x:hidden;
+}
+
 body{
     width: 100%;
     height: auto;
+   
 }
+
 .navbar{
     display: flex;
     flex-direction: row;
@@ -42,22 +48,227 @@ body{
 .container_0ne .Welcome_text{
     padding: 40px;
 }
-.container_0ne  button{
+.container_0ne  #register_login{
     height: 50px;
     width: 300px;
     background-color: white;
-    color: rgb(12, 12, 148);
+    color: black;
     border-radius: 40px ;
     border: none;
-    transform: 1.2;
+    margin: 20px;
+    font-size: 18px;
 }
-.container_0ne  button a{
-    text-decoration: none;
+.container_0ne #register_doctor{
+    height: 50px;
+    width: 300px;
+    background-color: white;
     color: black;
+    border-radius: 40px ;
+    border: none;
+    margin: 20px;
+    font-size: 18px;
 }
-.container_0ne  button a:hover{
+
+.container_0ne  button:hover{
     color: tomato;
 }
+
+.submenu{
+    display: none;
+}
+.navbar ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 320px;
+}
+.navbar ul li:hover .submenu ul li{
+    display: block;
+}
+
+.popup{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background-color: #fff; 
+    box-shadow: 2px 3px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 400ms ease-in-out 0ms,
+}
+.popup.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); 
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms,
+}
+.popup .close_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.popup .form h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+
+}
+.popup .form .form_elements{
+
+    margin: 15px 0px;
+
+}
+.popup .form .form_elements label{
+    font-size: 14px;
+    color: #222;
+}
+.popup .form .form_elements input[type="text"], 
+.popup .form .form_elements input[type="password"],
+.popup .form .form_elements input[type="number"]{
+margin-top: 5px;
+display: block;
+width: 100%;
+padding: 10px;
+outline: none;
+border: 1px solid #aaa;
+border-radius: 5px;
+ 
+}
+.popup .form .form_elements input[type="checkbox"]{
+  margin-right: 5px;
+
+}
+.popup .form .form_elements button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #f5f5ff;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #222;
+}
+.popup .form .form_elements a{
+    display: block;
+    font-size: 15px;
+    text-align: right;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+
+
+.pop-up{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background-color: #fff; 
+    box-shadow: 2px 3px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 40ms ease-in-out 0ms,
+}
+.pop-up.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); 
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms,
+}
+.pop-up .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+.pop-up .form h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+
+}
+.pop-up .form .form-elements{
+
+    margin: 15px 0px;
+
+}
+.pop-up .form .form-elements label{
+    font-size: 14px;
+    color: #222;
+}
+.pop-up .form .form-elements input[type="text"], 
+.pop-up .form .form-elements input[type="password"],
+.pop-up .form .form-elements input[type="number"]{
+margin-top: 5px;
+display: block;
+width: 100%;
+padding: 10px;
+outline: none;
+border: 1px solid #aaa;
+border-radius: 5px;
+ 
+}
+.pop-up .form .form-elements input[type="checkbox"]{
+  margin-right: 5px;
+
+}
+.pop-up .form .form-elements button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #f5f5ff;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #222;
+}
+.pop-up .form .form-elements a{
+    display: block;
+    font-size: 15px;
+    text-align: right;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+
 .container_two{
     margin-top: 100px;
     text-align: center;
@@ -122,6 +333,8 @@ text-decoration: underline #16B0EC;
     justify-content: space-evenly;
     margin-top: 40px;
     margin-bottom: 60px;
+    background-color: #16B0EC;
+    margin-top: -20px;
 }
 
 .col_5 #col_5_1, #col_5_2, #col_5_3{
@@ -131,18 +344,73 @@ text-decoration: underline #16B0EC;
 
 }
 .Doctors{
+    margin-bottom: 20px;
+}
+.flex_one{
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
+    
+
+}
+.flex_one #btn_consult{
+    height: 40px;
+    background-color: #16B0EC;
+    border-radius: 20px;
+    border: none;
+   
+
+}
+.flex_one button a{
+    color: black;
+    text-decoration: none;
+}
+.flex_one button a:hover{
+    color: tomato;
+}
+.Doctors #doc_text{
+    text-align: center;
 }
 footer{
     display: flex;
     justify-content: space-evenly;
     background-color: #16B0EC;
 }
+footer  ul{
+    list-style: none;
+}
+
 footer  ul li a{
     text-decoration: none;
     color: black;
+   
 } 
 footer  ul li a:hover{
     color: tomato;
+}
+footer a:hover{
+color: tomato;
+}
+
+@media only screen and (min-width:480px){
+   body{
+    width: 100%;
+    overflow-x: hidden;
+     }
+     
+    .navigation .container_0ne #doc_image{
+         height: 20%;
+     }
+     #register_login{
+         height: 10px;
+     }
+   
+}
+@media only screen and (min-width:480px){
+    body{
+        width:100%;
+        overflow-x: hidden;
+    
+    }
+    
 }

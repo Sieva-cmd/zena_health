@@ -1,0 +1,86 @@
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:auto;
+    margin-bottom: 10px;
+}
+.navbar h3{
+    margin-left: -10px;
+    color:#16B0EC;
+    font-style: italic;
+}
+.navbar ul{
+    margin-left: 300px;
+}
+.navbar ul a {
+    float: right; 
+    text-decoration: none;
+    margin-left: 60px;
+    color: black;
+}
+.navbar ul a:hover{
+    text-decoration:underline;
+    color:palevioletred;
+} 
+
+.navbar ul li{
+   
+    display: inline;
+    padding-right: 80px;
+    padding-top: 6px;
+}
+
+.submenu{
+    display: none;
+}
+.navbar ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 320px;
+}
+.navbar ul li:hover .submenu ul li{
+    display: block;
+}
+.container_one{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+.container_one button{
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    background-color: #16B0EC;
+
+}
+.container_two{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #16B0EC;
+}
+footer  ul{
+    list-style: none;
+}
+
+footer  ul li a{
+    text-decoration: none;
+    color: black;
+   
+} 
+footer  ul li a:hover{
+    color: tomato;
+}
+footer a:hover{
+color: tomato;
+}

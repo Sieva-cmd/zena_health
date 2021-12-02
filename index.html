@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <title>Zena Health</title>
 </head>
 
@@ -16,7 +19,8 @@
                 <img src="images/Zena logo.jpeg" alt="" height="50px">
                 <h3>ENA </h3>
                 <ul>
-                    <li><a href="">Log Out</a> </li>
+                    <li><a href="">Log Out</a>
+                    </li>
                     <li><a href="">Contact Us</a> </li>
                     <li><a href=""> About US</a></li>
                     <li><a href=""> Home </a></li>
@@ -26,11 +30,98 @@
                 <Div class="Welcome_text">
                     <h1>Have Access To A Health <br> Specialist At Any Time</h1> <br>
                     <h3>Wellness For Your Family Wellness For Life</h3> <br>
-                    <button> <a href="">Access your secure Patient Portal</a></button> <br> <br> <br>
-                    <button> <a href="">Access Your Secure Doctor Portal</a></button>
+                    <button id="register_login">Access your secure Patient Portal</button> <br>
+                    <button id="register_doctor"> Access Your Secure Doctor Portal</button>
+                    <div class="popup">
+                        <div class="close_btn">&times;</div>
+                        <div class="form">
+                            <form action="" name="myForm" method="post" onsubmit="return validate()">
+
+                                <div class="form_elements">
+                                    <label>User Name</label><input type="text" name="uName"
+                                        placeholder="name as per your id" maxlength="30">
+                                </div>
+                                <div class="form_elements">
+                                    <label>Email</label><input type="text" name="email" placeholder="example@gmail.com">
+                                </div>
+                                <div class="form_elements">
+                                    <label>password</label><input type="password" name="password">
+                                </div>
+                                <div class="form_elements">
+                                    <label>Confirm Pasword</label><input type="password" name="passwordc">
+                                </div>
+                                <div class="form_elements">
+                                    <label>Contact</label><input type="tel" name="contact">
+                                </div>
+                                <div class="form_elements">
+                                    <input type="checkbox" id="remember_me" name=" remember_me">
+                                    <label for="remember_me">remember password</label>
+                                </div>
+                                <div class="form_elements">
+                                    <button type="submit">submit</button> <br>
+                                    <button> <a href="sign_in_patient.html">Sign in</a></button>
+                                </div>
+                                <div class="form_elements">
+                                    <a href="#">forgot password</a>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="pop-up">
+                        <div class="close-btn"> &times;</div>
+                        <div class="form ">
+                            <form action="" name="myForm" method="post" onsubmit="return validate()">
+
+                                <div class="form-elements">
+                                    <label>User Name</label><input type="text" name="username"
+                                        placeholder="name as per your id" maxlength="30">
+                                </div>
+                                <div class="form-elements">
+                                    <label>NPI</label><input type="text" name="npi" placeholder="Enter your NPI">
+                                </div>
+                                <div class="form-elements">
+                                    <label>Location</label><input type="text" name="location"
+                                        placeholder="Enter the hospital ">
+                                </div>
+                                <div class="form-elements">
+                                    <label>Specialist</label><input type="text" name="specialist"
+                                        placeholder="Enter your Specialist category">
+                                </div>
+                                <div class="form-elements">
+                                    <label>Contact</label><input type="text" name="contact">
+                                </div>
+                                <div class="form-elements">
+                                    <label>Password</label><input type="text" name="password"
+                                        placeholder="Enter your password">
+                                </div>
+                                <div class="form-elements">
+                                    <label>Confirm-Password</label><input type="text" name="confirm-pass"
+                                        placeholder="confirm_password">
+                                </div>
+
+                                <div class="form_elements">
+                                    <input type="checkbox" id="remember_me" name=" remember_me">
+                                    <label for="remember_me">remember password</label>
+                                </div>
+                                <div class="form_elements">
+                                    <button id="submit" type="submit">submit</button>
+                                    <button id="login" type="submit"><a href="doctor_signin.html">Log In</a></button>
+
+                                </div>
+                                <div class="form_elements">
+                                    <a href="#">forgot password</a>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+
                 </Div>
 
-                <Div class="doc_image">
+                <Div id="doc_image">
                     <img src="images/image1-removebg-preview.png" alt="" height="600px">
                 </Div>
             </Div>
@@ -165,54 +256,70 @@
 
 
         <Div class="Doctors">
-            <Div id="doc_one">
-                <img src="images/doc_one.jpg" alt="" height="150">
-                <p>Name:</p>
-                <p> Location:</p>
-                <p>Specialist In:</p>
-                <p>Phone:</p>
-                <p>Tel:</p>
+            <Div id="doc_text">
+                <h1>Consult Our specialists</h1>
             </Div>
-            <Div id="doc_two">
-                <img src="images/doc_two.jpg" alt="" height="150">
-                <p>Name:</p>
-                <p> Location:</p>
-                <p>Specialist In:</p>
-                <p>Phone:</p>
-                <p>Tel:</p>
-            </Div>
-            <Div id="doc_three">
-                <img src="images/doc_three.jpg" alt="">
-                <p>Name:</p>
-                <p> Location:</p>
-                <p>Specialist In:</p>
-                <p>Phone:</p>
-                <p>Tel:</p>
-            </Div>
-            <Div id="doc_four">
-                <img src="images/doc_four.jpg" alt="" height="150">
-                <p>Name:</p>
-                <p> Location:</p>
-                <p>Specialist In:</p>
-                <p>Phone:</p>
-                <p>Tel:</p>
-            </Div>
-            <Div id="doc_five">
-                <img src="images/doc_five.jpg" alt="" height="150">
-                <p>Name:</p>
-                <p> Location:</p>
-                <p>Specialist In:</p>
-                <p>Phone:</p>
-                <p>Tel:</p>
-            </Div>
-            <Div id="doc_six">
-                <img src="images/doc_six.jpg" alt="" height="150">
-                <p>Name:</p>
-                <p> Location:</p>
-                <p>Specialist In:</p>
-                <p>Phone:</p>
-                <p>Tel:</p>
-            </Div>
+
+            <div class="flex_one">
+                <Div id="doc_one">
+                    <img src="images/doc_one.jpg" alt="" height="150">
+                    <p>Name:Kelvin Wamyoike</p>
+                    <p> Location:</p>
+                    <p>Specialist In:Dermatologist</p>
+                    <p>Phone:</p>
+                    <p>Tel:</p>
+                    <button id="btn_consult"> <a href="">Book Appointment</a></button>
+                </Div>
+                <Div id="doc_two">
+                    <img src="images/doc_two.jpg" alt="" height="150">
+                    <p>Name:</p>
+                    <p> Location:</p>
+                    <p>Specialist In:Gastroenterologist</p>
+                    <p>Phone:</p>
+                    <p>Tel:</p>
+                    <button id="btn_consult"> <a href="">Book Appointment</a></button>
+                </Div>
+                <Div id="doc_three">
+                    <img src="images/doc_three.jpg" alt="">
+                    <p>Name:Albert Byronne</p>
+                    <p> Location:Kenyatta Hospital</p>
+                    <p>Specialist In:Neurosergion</p>
+                    <p>Phone:+254756349021</p>
+                    <p>Tel:</p>
+                    <button id="btn_consult"> <a href="">Book Appointment</a></button>
+                </Div>
+            </div>
+            <div class="flex_one">
+                <Div id="doc_four">
+                    <img src="images/doc_four.jpg" alt="" height="150">
+                    <p>Name:</p>
+                    <p> Location:</p>
+                    <p>Specialist In:Cardiologist</p>
+                    <p>Phone:</p>
+                    <p>Tel:</p>
+                    <button id="btn_consult"> <a href="">Book Appointment</a></button>
+                </Div>
+                <Div id="doc_five">
+                    <img src="images/doc_five.jpg" alt="" height="150">
+                    <p>Name:</p>
+                    <p> Location:</p>
+                    <p>Specialist In:Oncologist</p>
+                    <p>Phone:</p>
+                    <p>Tel:</p>
+                    <button id="btn_consult"> <a href="">Book Appointment</a></button>
+                </Div>
+                <Div id="doc_six">
+                    <img src="images/doc_six.jpg" alt="" height="150">
+                    <p>Name:Sophia Ngei</p>
+                    <p> Location:Nairobi Hospital</p>
+                    <p>Specialist In:Orthopaedist </p>
+                    <p>Phone:+254756903458</p>
+                    <p>Tel:</p>
+                    <button id="btn_consult"> <a href="">Book Appointment</a></button>
+                </Div>
+            </div>
+
+
         </Div>
 
         <footer>
@@ -242,11 +349,8 @@
                     to primary care. Receive high-quality, <br>
                     personalized care from our <br>
                     board-certified doctors.</p>
-                <a href=""><img src="images/facebook1-removebg-preview.png" alt="" height="30px"></a>
-                <a href=""> <img src="images/twitter-removebg-preview.png" alt="" height="30px"></a>
-                <a href=""><img src="images/instagram-removebg-preview.png" alt="" height="30px"></a>
-                <a href=""> <img src="images/linkedin-removebg-preview.png" alt="" height="30px"></a>
-
+                <p> <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i
+                        class="fab fa-linkedin"></i></p>
             </Div>
 
         </footer>
@@ -260,6 +364,16 @@
 
 
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="index.js"></script>
 </body>
 
 </html>

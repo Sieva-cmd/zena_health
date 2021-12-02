@@ -1,0 +1,139 @@
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:auto;
+    margin-bottom: 10px;
+}
+.navbar h3{
+    margin-left: -10px;
+    color:#16B0EC;
+    font-style: italic;
+}
+.navbar ul{
+    margin-left: 300px;
+}
+.navbar ul a {
+    float: right; 
+    text-decoration: none;
+    margin-left: 60px;
+    color: black;
+}
+.navbar ul a:hover{
+    text-decoration:underline;
+    color:palevioletred;
+} 
+
+.navbar ul li{
+   
+    display: inline;
+    padding-right: 80px;
+    padding-top: 6px;
+}
+
+.submenu{
+    display: none;
+}
+.navbar ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 340px;
+}
+.navbar ul li:hover .submenu ul li{
+    display: block;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg , white 50%,#16B0EC 50%);
+}
+#patient_txt{
+    text-align: center;
+}
+#patient_image{
+    width: 50%;
+    margin-left: -87px;
+}
+.container button{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+.pharmacy{
+    display: flex;
+    justify-content: space-evenly;
+}
+.pharmacy button{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #16B0EC;
+}
+.pharmacy_upload{
+    font-size: 30px;
+}
+
+.services{
+    background-color: #16B0EC;
+}
+.services .upper_col{
+    text-align: center;
+    color: white;
+}
+.services .Overflow{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+
+}
+.col_5{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    background-color: #16B0EC;
+    margin-top: -20px;
+}
+
+.col_5 #col_5_1, #col_5_2, #col_5_3{
+    border-radius: 10px;
+    box-shadow: -10px 10px 10px lightgray;
+    text-align: center;
+
+}
+.lab_services{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lab_services button{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #16B0EC;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #16B0EC;
+}
+footer  ul{
+    list-style: none;
+}
+
+footer  ul li a{
+    text-decoration: none;
+    color: black;
+   
+} 
+footer  ul li a:hover{
+    color: tomato;
+}
+footer a:hover{
+color: tomato;
+}
