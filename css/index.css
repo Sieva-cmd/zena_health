@@ -1,92 +1,102 @@
-*{ 
-    overflow-x:hidden;
+* {
+    overflow-x: hidden;
 }
 
-body{
+body {
     width: 100%;
     height: auto;
-   
+
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height:auto;
+    height: auto;
     margin-bottom: 10px;
 }
-.navbar h3{
+
+.navbar h3 {
     margin-left: -10px;
-    color:#16B0EC;
+    color: #16B0EC;
     font-style: italic;
 }
-.navbar ul{
+
+.navbar ul {
     margin-left: 300px;
 }
+
 .navbar ul a {
-    float: right; 
+    float: right;
     text-decoration: none;
     margin-left: 60px;
     color: black;
 }
-.navbar ul a:hover{
-    text-decoration:underline;
-    color:palevioletred;
-} 
 
-.navbar ul li{
-   
+.navbar ul a:hover {
+    text-decoration: underline;
+    color: palevioletred;
+}
+
+.navbar ul li {
+
     display: inline;
     padding-right: 80px;
     padding-top: 6px;
 }
- .container_0ne{
+
+.container_0ne {
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(22, 176, 236);
 }
-.container_0ne .Welcome_text{
+
+.container_0ne .Welcome_text {
     padding: 40px;
 }
-.container_0ne  #register_login{
+
+.container_0ne #register_login {
     height: 50px;
     width: 300px;
     background-color: white;
     color: black;
-    border-radius: 40px ;
-    border: none;
-    margin: 20px;
-    font-size: 18px;
-}
-.container_0ne #register_doctor{
-    height: 50px;
-    width: 300px;
-    background-color: white;
-    color: black;
-    border-radius: 40px ;
+    border-radius: 40px;
     border: none;
     margin: 20px;
     font-size: 18px;
 }
 
-.container_0ne  button:hover{
+.container_0ne #register_doctor {
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    border: none;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.container_0ne button:hover {
     color: tomato;
 }
 
-.submenu{
+.submenu {
     display: none;
 }
-.navbar ul li:hover .submenu{
+
+.navbar ul li:hover .submenu {
     display: block;
     position: absolute;
     margin-top: 25px;
     margin-left: 320px;
 }
-.navbar ul li:hover .submenu ul li{
+
+.navbar ul li:hover .submenu ul li {
     display: block;
 }
 
-.popup{
+.popup {
     position: absolute;
     top: 150%;
     left: 50%;
@@ -94,22 +104,24 @@ body{
     transform: translate(-50%, -50%) scale(1.25);
     width: 380px;
     padding: 20px 30px;
-    background-color: #fff; 
-    box-shadow: 2px 3px 5px 5px rgba(0,0,0,0.15);
+    background-color: #fff;
+    box-shadow: 2px 3px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     transition: top 0ms ease-in-out 200ms,
-                opacity 200ms ease-in-out 0ms,
-                transform 400ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 400ms ease-in-out 0ms,
 }
-.popup.active{
+
+.popup.active {
     top: 60%;
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1); 
+    transform: translate(-50%, -50%) scale(1);
     transition: top 0ms ease-in-out 0ms,
-                opacity 200ms ease-in-out 0ms,
-                transform 20ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms,
 }
-.popup .close_btn{
+
+.popup .close_btn {
     position: absolute;
     top: 10px;
     right: 20px;
@@ -123,39 +135,45 @@ body{
     cursor: pointer;
 
 }
-.popup .form h2{
+
+.popup .form h2 {
     text-align: center;
     color: #222;
     margin: 10px 0px 20px;
     font-size: 25px;
 
 }
-.popup .form .form_elements{
+
+.popup .form .form_elements {
 
     margin: 15px 0px;
 
 }
-.popup .form .form_elements label{
+
+.popup .form .form_elements label {
     font-size: 14px;
     color: #222;
 }
-.popup .form .form_elements input[type="text"], 
+
+.popup .form .form_elements input[type="text"],
 .popup .form .form_elements input[type="password"],
-.popup .form .form_elements input[type="number"]{
-margin-top: 5px;
-display: block;
-width: 100%;
-padding: 10px;
-outline: none;
-border: 1px solid #aaa;
-border-radius: 5px;
- 
-}
-.popup .form .form_elements input[type="checkbox"]{
-  margin-right: 5px;
+.popup .form .form_elements input[type="number"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
 
 }
-.popup .form .form_elements button{
+
+.popup .form .form_elements input[type="checkbox"] {
+    margin-right: 5px;
+
+}
+
+.popup .form .form_elements button {
     width: 100%;
     height: 40px;
     border: none;
@@ -167,7 +185,8 @@ border-radius: 5px;
     background: #222;
     margin-bottom: 10px;
 }
-.popup .form .form_elements a{
+
+.popup .form .form_elements a {
     display: block;
     font-size: 15px;
     text-decoration: none;
@@ -177,7 +196,7 @@ border-radius: 5px;
 
 
 
-.pop-up{
+.pop-up {
     position: absolute;
     top: 150%;
     left: 50%;
@@ -185,22 +204,24 @@ border-radius: 5px;
     transform: translate(-50%, -50%) scale(1.25);
     width: 380px;
     padding: 20px 30px;
-    background-color: #fff; 
-    box-shadow: 2px 3px 5px 5px rgba(0,0,0,0.15);
+    background-color: #fff;
+    box-shadow: 2px 3px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     transition: top 0ms ease-in-out 200ms,
-                opacity 200ms ease-in-out 0ms,
-                transform 40ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 40ms ease-in-out 0ms,
 }
-.pop-up.active{
+
+.pop-up.active {
     top: 70%;
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1); 
+    transform: translate(-50%, -50%) scale(1);
     transition: top 0ms ease-in-out 0ms,
-                opacity 200ms ease-in-out 0ms,
-                transform 20ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms,
 }
-.pop-up .close-btn{
+
+.pop-up .close-btn {
     position: absolute;
     top: 10px;
     right: 20px;
@@ -214,38 +235,44 @@ border-radius: 5px;
     cursor: pointer;
 
 }
-.pop-up .form h2{
+
+.pop-up .form h2 {
     text-align: center;
     color: #222;
     margin: 10px 0px 20px;
     font-size: 25px;
 
 }
-.pop-up .form .form-elements{
+
+.pop-up .form .form-elements {
 
     margin: 15px 0px;
 
 }
-.pop-up .form .form-elements label{
+
+.pop-up .form .form-elements label {
     font-size: 14px;
     color: #222;
 }
-.pop-up .form .form-elements input[type="text"], 
+
+.pop-up .form .form-elements input[type="text"],
 .pop-up .form .form-elements input[type="password"],
-.pop-up .form .form-elements input[type="number"]{
-margin-top: 5px;
-display: block;
-width: 100%;
-padding: 10px;
-outline: none;
-border: 1px solid #aaa;
-border-radius: 5px;
- 
-}
-.pop-up .form .form-elements input[type="checkbox"]{
-  margin-right: 5px;
+.pop-up .form .form-elements input[type="number"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
 
 }
+
+.pop-up .form .form-elements input[type="checkbox"] {
+    margin-right: 5px;
+
+}
+
 /* .pop-up .form .form-elements button{
     width: 100%;
     height: 40px;
@@ -257,14 +284,15 @@ border-radius: 5px;
     cursor: pointer;
     background: #222;
 } */
-.pop-up .form .form-elements a{
+.pop-up .form .form-elements a {
     display: block;
     font-size: 15px;
     text-decoration: none;
     font-weight: 600;
 
 }
-#login, #submit{
+
+#login, #submit {
     width: 100%;
     height: 40px;
     border: none;
@@ -278,66 +306,78 @@ border-radius: 5px;
 }
 
 
-.container_two{
+.container_two {
     margin-top: 100px;
     text-align: center;
     margin-bottom: 100px;
 }
-.container_two span{
-text-decoration: underline #16B0EC;
+
+.container_two span {
+    text-decoration: underline #16B0EC;
 }
-.container_two button{
+
+.container_two button {
     height: 50px;
     width: 300px;
     background-color: #16B0EC;
     color: white;
-    border-radius: 40px ;
+    border-radius: 40px;
     box-shadow: 10px 10px;
     border: none;
 }
-.container_three{
+
+.container_three {
     display: flex;
     justify-content: space-evenly;
 
 }
-.container_three img{
+
+.container_three img {
     border-radius: 10px;
     box-shadow: -5px 5px 10px lightgray;
 }
-.container_three #center_txt{
+
+.container_three #center_txt {
     width: 33.3%;
     border-radius: 10px;
     text-align: center;
 
 }
-.container_three #center_txt button{
+
+.container_three #center_txt button {
     height: 40px;
     background-color: #16B0EC;
     border-radius: 20px;
     border: none;
 
 }
-.container_three #center_txt button a{
+
+.container_three #center_txt button a {
     text-decoration: none;
     color: black;
 }
-.container_three #center_txt button a:hover{
+
+.container_three #center_txt button a:hover {
     color: tomato;
 }
-.services{
+
+.services {
     background-color: #16B0EC;
 }
-.services .upper_col{
+
+.services .upper_col {
     text-align: center;
     color: white;
 }
-.services .Overflow{
+
+.services .Overflow {
     display: flex;
     justify-content: space-evenly;
     color: white;
 
 }
-.col_5{
+
+.col_5 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
@@ -346,80 +386,140 @@ text-decoration: underline #16B0EC;
     margin-top: -20px;
 }
 
-.col_5 #col_5_1, #col_5_2, #col_5_3{
+.col_5 #col_5_1, #col_5_2, #col_5_3 {
     border-radius: 10px;
     box-shadow: -10px 10px 10px lightgray;
     text-align: center;
 
 }
-.Doctors{
+
+.Doctors {
     margin-bottom: 20px;
 }
-.flex_one{
+
+.flex_one {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    
+
 
 }
-.flex_one #btn_consult{
+
+.flex_one #btn_consult {
     height: 40px;
     background-color: #16B0EC;
     border-radius: 20px;
     border: none;
-   
+
 
 }
-.flex_one button a{
+
+.flex_one button a {
     color: black;
     text-decoration: none;
 }
-.flex_one button a:hover{
+
+.flex_one button a:hover {
     color: tomato;
 }
-.Doctors #doc_text{
+
+.Doctors #doc_text {
     text-align: center;
 }
-footer{
+
+footer {
     display: flex;
     justify-content: space-evenly;
     background-color: #16B0EC;
 }
-footer  ul{
+
+footer ul {
     list-style: none;
 }
 
-footer  ul li a{
+footer ul li a {
     text-decoration: none;
     color: black;
-   
-} 
-footer  ul li a:hover{
-    color: tomato;
-}
-footer a:hover{
-color: tomato;
+
 }
 
-@media only screen and (min-width:480px){
-   body{
-    width: 100%;
-    overflow-x: hidden;
-     }
-     
-    .navigation .container_0ne #doc_image{
-         height: 20%;
-     }
-     #register_login{
-         height: 10px;
-     }
-   
+footer ul li a:hover {
+    color: tomato;
 }
-@media only screen and (min-width:480px){
-    body{
-        width:100%;
+
+footer a:hover {
+    color: tomato;
+}
+
+.flexed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flexed h1, #doc_seven {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#button {
+    border-radius: 10px;
+    border: none;
+    background-color: #16B0EC;
+    margin-bottom: 50px;
+}
+
+.flexed img {
+    border-radius: 800px;
+    height: 200px;
+}
+
+.flexed form {
+    margin-top: 100px;
+}
+
+.card {
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid black;
+    margin-top: 50px;
+
+
+}
+
+
+
+.card i {
+    text-align: center;
+    font-size: 40px;
+}
+
+.contact {
+    background-color: #16B0EC;
+    margin-bottom: 80px;
+}
+
+@media only screen and (min-width:480px) {
+    body {
+        width: 100%;
         overflow-x: hidden;
-    
     }
-    
+
+    .navigation .container_0ne #doc_image {
+        height: 20%;
+    }
+
+    #register_login {
+        height: 10px;
+    }
+
+}
+
+@media only screen and (min-width:480px) {
+    body {
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
 }
