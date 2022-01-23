@@ -156,8 +156,7 @@ body {
 }
 
 .popup .form .form_elements input[type="text"],
-.popup .form .form_elements input[type="password"],
-.popup .form .form_elements input[type="number"] {
+.popup .form .form_elements input[type="password"] {
     margin-top: 5px;
     display: block;
     width: 100%;

@@ -45,7 +45,7 @@
                     <div class="popup">
                         <div class="close_btn">&times;</div>
                         <div class="form">
-                            <form action="" name="myForm" method="post" onsubmit="return validate()">
+                            <form id="patientForm" onsubmit="return validate()">
 
                                 <div class="form_elements">
                                     <label>User Name</label><input type="text" name="uName"
@@ -58,11 +58,9 @@
                                     <label>password</label><input type="password" name="password">
                                 </div>
                                 <div class="form_elements">
-                                    <label>Confirm Pasword</label><input type="password" name="passwordc">
+                                    <label>Confirm Pasword</label><input type="password" name="password">
                                 </div>
-                                <div class="form_elements">
-                                    <label>Contact</label><input type="tel" name="contact">
-                                </div>
+                              
                                 <div class="form_elements">
                                     <input type="checkbox" id="remember_me" name=" remember_me">
                                     <label for="remember_me">remember password</label>
@@ -82,7 +80,7 @@
                     <div class="pop-up">
                         <div class="close-btn"> &times;</div>
                         <div class="form ">
-                            <form action="" name="myForm" method="post" onsubmit="return validate()">
+                            <form id="doctorForm" onsubmit="return validate()">
 
                                 <div class="form-elements">
                                     <label>User Name</label><input type="text" name="username"
