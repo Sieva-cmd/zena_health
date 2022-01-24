@@ -24,6 +24,7 @@ body {
 
 .navbar ul {
     margin-left: 300px;
+    
 }
 
 .navbar ul a {
@@ -44,6 +45,7 @@ body {
     padding-right: 80px;
     padding-top: 6px;
 }
+
 
 .container_One {
     display: flex;
@@ -376,7 +378,7 @@ body {
 
 }
 
-.flex_one #btn_consult {
+.flex_one #btn_consult, #btn_two, #btn_three, #btn_four, #btn_five, #btn_six {
     height: 40px;
     background-color: #16B0EC;
     border-radius: 20px;

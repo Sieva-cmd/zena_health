@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/patient.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/patient.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <title>Patients Interface</title>
@@ -13,7 +19,7 @@
 <body>
     <main>
         <nav class="navbar">
-            <img src="images/Zena logo.jpeg" alt="" height="50px">
+            <img src="images/Zena logo.jpeg" alt="" height="50px" style="margin-left: 40px;">
             <h3>ENA </h3>
             <ul>
                 <li><a href="">Log Out</a>
@@ -27,9 +33,9 @@
 
 
                 </li>
-                <li><a href="">Contact Us</a> </li>
-                <li><a href=""> About US</a></li>
-                <li><a href=""> Home </a></li>
+                <li><a href="contact-us.html">Contact Us</a> </li>
+                <li><a href="about.html"> About US</a></li>
+                <li><a href="index.html"> Home </a></li>
             </ul>
         </nav>
 
@@ -39,10 +45,16 @@
             </Div>
             <Div id="patient_txt">
                 <h3>Welcome To Our Health care</h3>
-                <p> <span>A Smile </span> A Smile Changes Evrything... </p>
-                <button>View prescription</button> <br> <br>
-                <button>Download prescription</button> <br> <br>
-                <button>View Ambulance Hotline</button>
+                <p> <span>A Smile </span> Changes Evrything... </p>
+                <button id="view">View prescription</button> <br> <br>
+                <button id="download">Download prescription</button> <br> <br>
+                <button id="ambulance">View Ambulance Hotline</button>
+                <!-- <Div class="details">
+                    <p>Profile</p>
+                    <p>Name:<span id="names"></span></p>
+                    <p>Email: <span id="emails"></span></p>
+                </Div> -->
+
 
             </Div>
         </Div>
@@ -55,9 +67,9 @@
                 <H3>Qualified Services Offered At All Time. </H3>
                 <p>Wellness For Your Family <br>
                     Wellness For Your Life. </p>
-                <button>Choose Pharmacy</button> <br> <br>
-                <button> Upload Your Prescription</button> <br> <br>
-                <button> View Pharmacy Feedback</button>
+                <button>Choose Pharmacy</button> <br>
+                <button>Upload Prescription</button> <br>
+                <button>View Pharmacy Feedback</button>
             </Div>
             <Div class="pharmacy_image">
                 <img src="images/pharmacy_2.png" alt="" height="400px">

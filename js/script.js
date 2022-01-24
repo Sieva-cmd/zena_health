@@ -117,11 +117,14 @@ $(document).ready(function () {
    $("#register").click(function () {
       function pageRedirect() {
          window.location.href = "Doctors-interface.html";
+         $("#docName").html(userName);
+         $("#docContact").html(contact);
       }
       setTimeout("pageRedirect()", 10000);
       pageRedirect();
 
    })
+  
 
 
 
@@ -173,9 +176,36 @@ $(document).ready(function () {
    $("#reg").click(function () {
       function redirectPage() {
          window.location.href = "patients_interface.html";
+         // $("#names").html(myNamme);
+         // $("#email").html(email);
       }
       setTimeout("pageRedirect()", 10000);
       redirectPage();
 
    })
+
+   $("#btn_consult").click(function(){
+      alert("appointment booked");
+   })
+   $("#btn_two").click(function(){
+      alert("appointment booked");
+   })
+   $("#btn_three").click(function(){
+      alert("appointment booked");
+   })
+   $("#btn_four").click(function(){
+      alert("appointment booked");
+   })
+   $("#btn_five").click(function(){
+      alert("appointment booked");
+   })
+   $("#btn_six").click(function(){
+      alert("appointment booked");
+   })
+
+  
+
+
+
+  
 })
