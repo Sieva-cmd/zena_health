@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/patient.js"></script>
+
     <script type="module" src="js/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -68,8 +68,13 @@
                 <p>Wellness For Your Family <br>
                     Wellness For Your Life. </p>
                 <button>Choose Pharmacy</button> <br>
-                <button>Upload Prescription</button> <br>
-                <button>View Pharmacy Feedback</button>
+                <button>Upload Prescription</button>  <br>
+                 <form style="font-size: 16px;">
+                    <div class="form-group">
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                  </form>  <br>
+                <button style="margin-bottom: 30px;">View Pharmacy Feedback</button>
             </Div>
             <Div class="pharmacy_image">
                 <img src="images/pharmacy_2.png" alt="" height="400px">
@@ -145,9 +150,13 @@
                 <H3>Our Laboratory</H3>
                 <p>Welcome To Our laboratories <br>
                     We provide services throughout the clock</p>
-                <button>Upload Your Lab Prescription</button> <br> <br>
+                <button>Upload Your Lab Prescription</button> <br>  <br> <form>
+                    <div class="form-group">
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1" >
+                    </div>
+                  </form> <br>
                 <Button>View Lab Results</Button> <br> <br>
-                <button>Download Lab Results</button>
+                <button style="margin-bottom: 30px;">Download Lab Results</button>
             </Div>
         </Div>
 
@@ -184,6 +193,8 @@
 
         </footer>
     </main>
+
+    <script src="js/patient.js"></script>
 </body>
 
 </html>

@@ -72,6 +72,7 @@
     border-radius: 20px;
     border: none;
     background-color: #16B0EC;
+    font-size: 16px;
 }
 .pharmacy_upload{
     font-size: 30px;
@@ -111,7 +112,7 @@
     justify-content: space-evenly;
 }
 .lab_services button{
-    width: 200px;
+    width: 250px;
     height: 40px;
     border-radius: 20px;
     border: none;
