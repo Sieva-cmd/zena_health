@@ -184,24 +184,24 @@ $(document).ready(function () {
 
    })
 
-   $("#btn_consult").click(function(){
-      alert("appointment booked");
-   })
-   $("#btn_two").click(function(){
-      alert("appointment booked");
-   })
-   $("#btn_three").click(function(){
-      alert("appointment booked");
-   })
-   $("#btn_four").click(function(){
-      alert("appointment booked");
-   })
-   $("#btn_five").click(function(){
-      alert("appointment booked");
-   })
-   $("#btn_six").click(function(){
-      alert("appointment booked");
-   })
+   // $("#btn_consult").click(function(){
+   //    alert("appointment booked");
+   // })
+   // $("#btn_two").click(function(){
+   //    alert("appointment booked");
+   // })
+   // $("#btn_three").click(function(){
+   //    alert("appointment booked");
+   // })
+   // $("#btn_four").click(function(){
+   //    alert("appointment booked");
+   // })
+   // $("#btn_five").click(function(){
+   //    alert("appointment booked");
+   // })
+   // $("#btn_six").click(function(){
+   //    alert("appointment booked");
+   // })
 
   
 

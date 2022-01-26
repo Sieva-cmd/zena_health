@@ -91,6 +91,10 @@
     color: white;
 
 }
+#book a{
+    text-decoration: none;
+    color: black;
+}
 .col_5{
     display: flex;
     justify-content: space-evenly;
@@ -117,6 +121,13 @@
     border-radius: 20px;
     border: none;
     background-color: #16B0EC;
+}
+
+#upload{
+    display: none;
+}
+#lab{
+    display: none;
 }
 footer{
     display: flex;

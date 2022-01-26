@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="appoint.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <title>Special patient</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link text-dark" href="index.html">Home</a>
+            <a class="nav-link text-dark" href="appoint.html">Book Appointment</a>
+            <a class="nav-link text-dark" href="services.html">Services</a>
+            <a class="nav-link text-dark" href="pharmacy.html">Pharmacy</a>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+
+    <div class="navigation">
+      <nav class="navbar">
+        <img src="images/Zena logo.jpeg" alt="" height="50px" style="margin-left: 40px;">
+        <h3>ENA </h3>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact-us.html">contact us</a></li>
+          <li><a href="appoint.html">Appointment</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class=" row">
+      <div id="book">
+        <h3>Booking Appointment with your specialist now </h3>
+        <p>Zena health is a community dedicated to see your health improve drastically <br>
+          Reach out to our able specialist at any time and let them attend to you while at home. <br>
+          feel free to book appointment with any specialist of your category
+        </p>
+
+      </div>
+    </div>
+    <div class="row">
+      <h3>Our Available specialists </h3>
+      <div class="col-md-4">
+        <h5>Oncologist</h5>
+        <img src="images/anaest.jpg" alt="" srcset="" width="300px">
+
+      </div>
+      <div class="col-md-4">
+        <h5>Cardiologist</h5>
+        <img src="images/cardio.jpg" alt="" srcset="" width="350px">
+
+      </div>
+      <div class="col-md-4">
+        <h5>Optician</h5>
+        <img src="images/optician.jpg" alt="" srcset="" width="350px">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Dentist</h5>
+        <img src="images/dentist.jpg" alt="" srcset="" width="350px" height="270px">
+
+      </div>
+      <div class="col-md-4">
+        <h5>Radiologist</h5>
+        <img src="images/radiologist.jpg" alt="" width="350px">
+      </div>
+      <div class="col-md-4">
+        <h5>Anaesthesiologist</h5>
+        <img src="images/anaest.jpg" alt="" width="350px">
+      </div>
+    </div>
+
+    <div class="row">
+      <h3>Book Now And get Checked with a specialist!</h3>
+      <button style="background-color: #16B0EC; border: none;" type="button" class="button" id="btn">Book</button>
+      <form class="myForm" id="form">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input type="text" class="form-control" id="names" placeholder="Full names" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput2" class="form-label">Phone number</label>
+          <input type="text" class="form-control" id="number" placeholder="phone number" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label> specialist you would want to book appointment with </label>
+          <select class="form-select form-select-lg mb-3" id="doctors" aria-label=".form-select-lg example">
+            <option value="Oncologist">Oncologist</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Optician">Optician</option>
+            <option value="Denstist">Dentist</option>
+            <option value="Radiologist">Radiologist</option>
+            <option value="Anaesthesiologist">Anaesthesiologist</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label> service you would want to get</label>
+          <select class="form-select form-select-lg mb-3" id="service" aria-label=".form-select-lg example">
+            <option value="Lab">Lab Services</option>
+            <option value="Pharmacy">Pharmacy service</option>
+            <option value="Diet">Diet & Nutrition</option>
+            <option value="Medical">Medical Devices</option>
+            <option value="Vaccination">Vaccination service</option>
+            <option value="Anaesthesiologist">Anaesthesiologist</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea3" class="form-label">Please tell us which condition you had been
+            diagnosed with</label>
+          <textarea class="form-control" id="mess" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea3" class="form-label">Your speciallist would like to know how you are
+            feeling currently</label>
+          <textarea class="form-control" id="mess" rows="3"></textarea>
+        </div>
+        <button style="background-color: #16B0EC; border: none;" type="submit" class="check"
+          id="check">book</button>
+      </form>
+      <div class="show" id="p">
+        <p>Thank you <span id="patient"></span> for booking an appointment with the <span id="doc"></span><br> Your
+          specialsit has received your appointment.
+          <br>Keep an eye out in your portal to get the doctors prescription. <br> If you receive a prescription upload
+          it in your pharmacy section and wait for a feedback.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <Div class="column_one">
+        <h3>Our Story</h3>
+        <ul>
+          <li> <a href="about.html">About Us</a> </li>
+          <li> <a href="">Jobs</a> </li>
+          <li> <a href="">Join</a> </li>
+          <li><a href="">Mobile App</a> </li>
+          <li> <a href="">Sitemap</a></li>
+        </ul>
+      </Div>
+      <Div class="column_two">
+        <h3>Get In Touch</h3>
+        <ul>
+          <li> <a href="">Feedback</a> </li>
+          <li> <a href="">Help</a> </li>
+          <li> <a href="">Practice Integration</a></li>
+          <li> <a href="">Media Inquiries</a></li>
+          <li> <a href="">Whre Should We Go Next</a></li>
+        </ul>
+      </Div>
+      <Div class="column_three">
+        <h3>The Best Doctors</h3>
+        <p>Our Clinic provides a fresh new approach <br>
+          to special care. Receive high-quality, <br>
+          personalized care from our <br>
+          board-certified doctors.</p>
+        <p> <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i
+            class="fab fa-linkedin"></i></p>
+      </Div>
+
+    </footer>
+  </div>
+</body>
+
+</html>

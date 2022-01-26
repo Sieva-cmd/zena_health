@@ -46,8 +46,10 @@
             <Div id="patient_txt">
                 <h3>Welcome To Our Health care</h3>
                 <p> <span>A Smile </span> Changes Evrything... </p>
+                <button id="book"><a href="./appointment/appoint.html">Book an Apointment</a></button> <br> <br>
                 <button id="view">View prescription</button> <br> <br>
                 <button id="download">Download prescription</button> <br> <br>
+                <!-- <button id="download">U prescription</button> <br> <br> -->
                 <button id="ambulance">View Ambulance Hotline</button>
                 <!-- <Div class="details">
                     <p>Profile</p>
@@ -67,14 +69,37 @@
                 <H3>Qualified Services Offered At All Time. </H3>
                 <p>Wellness For Your Family <br>
                     Wellness For Your Life. </p>
-                <button>Choose Pharmacy</button> <br>
-                <button>Upload Prescription</button>  <br>
-                 <form style="font-size: 16px;">
+
+                <button id="prescription"> Upload Prescription</button> <br>
+                <form style="font-size: 16px;" id="upload">
+                    <p>upolad Your prescription</p>
                     <div class="form-group">
-                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    </div>
-                  </form>  <br>
-                <button style="margin-bottom: 30px;">View Pharmacy Feedback</button>
+
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div> <br>
+                    <Div class="form-group">
+                        <lable>choose your payment mode</lable>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+
+                            <option value="1">Mpesa</option>
+                            <option value="2">paypal</option>
+                            <option value="3">Equity</option>
+                        </select>
+                    </Div> <br>
+                    <Div class="form-group">
+                        <label for="message">Enter your Location</label>
+                        <div class="form-floating">
+
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+
+                        </div>
+                    </Div> <br>
+
+                    <button id="uploadForm" type="submit">Upload</button>
+
+                </form> <br>
+
             </Div>
             <Div class="pharmacy_image">
                 <img src="images/pharmacy_2.png" alt="" height="400px">
@@ -150,13 +175,16 @@
                 <H3>Our Laboratory</H3>
                 <p>Welcome To Our laboratories <br>
                     We provide services throughout the clock</p>
-                <button>Upload Your Lab Prescription</button> <br>  <br> <form>
+                <button id="labResults">Upload Your Lab Prescription</button> <br> <br>
+                <form id="lab">
+                    <label for="message"> Upload your lab results</label> <br>
                     <div class="form-group">
-                      <input type="file" class="form-control-file" id="exampleFormControlFile1" >
-                    </div>
-                  </form> <br>
-                <Button>View Lab Results</Button> <br> <br>
-                <button style="margin-bottom: 30px;">Download Lab Results</button>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div> <br>
+                    <button id="uploadResults" type="submit">upload</button>
+                </form> <br>
+                <Button id="viewLab"> View Lab Results</Button> <br> <br>
+                <button id="downloadResults" style="margin-bottom: 30px;">Download Lab Results</button>
             </Div>
         </Div>
 
@@ -164,7 +192,7 @@
             <Div class="column_one">
                 <h3>Our Story</h3>
                 <ul>
-                    <li> <a href="">About Us</a> </li>
+                    <li> <a href="about.html">About Us</a> </li>
                     <li> <a href="">Jobs</a> </li>
                     <li> <a href="">Join</a> </li>
                     <li><a href="">Mobile App</a> </li>
@@ -184,7 +212,7 @@
             <Div class="column_three">
                 <h3>The Best Doctors</h3>
                 <p>Our Clinic provides a fresh new approach <br>
-                    to primary care. Receive high-quality, <br>
+                    to special care. Receive high-quality, <br>
                     personalized care from our <br>
                     board-certified doctors.</p>
                 <p> <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i
