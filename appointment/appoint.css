@@ -21,7 +21,11 @@
     box-sizing:border-box;
     margin: 0%;
     padding: 0%;
+ 
     
+}
+body{
+    overflow-x: hidden;
 }
 
 a{
@@ -56,6 +60,7 @@ a{
     margin-left: -430px;
     color: #16B0EC;
 }
+
 .navbar ul li a{
     color: black;
 }

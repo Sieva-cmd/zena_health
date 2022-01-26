@@ -42,6 +42,6 @@
       alert("Be on wait for results");
    })
    $("#downloadResults").click(function(){
-      alert("If results are available , download will start automatically");
+      alert("If results are available , download will start automatically . Book another appointment and attach results");
    })
  })
