@@ -112,6 +112,13 @@ label{
     font-size: large;
     font-weight: bold;
 }
+.specialist img{
+    border-radius: 10px;
+    box-shadow: -5px 5px rgb(199, 195, 195);
+    opacity: 0.9;
+
+}
+
 
 .footer{
     text-align: center;
