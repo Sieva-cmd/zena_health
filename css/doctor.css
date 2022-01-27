@@ -63,6 +63,9 @@ body{
     display: flex;
     justify-content: space-evenly;
 }
+#uploadPatientPrescription{
+    display: none;
+}
 
 footer{
     display: flex;
